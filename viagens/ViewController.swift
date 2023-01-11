@@ -6,8 +6,8 @@
 //
 
 import UIKit
-                                        //Protocolo para trabalhar com celulas
-class ViewController: UIViewController, UITableViewDataSource {
+
+class ViewController: UIViewController {
     
     //Criando uma referencia da tabela
     @IBOutlet weak var viagensTableView: UITableView!
@@ -21,6 +21,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         viagensTableView.dataSource = self
     }
 
+}
+
+                        //Protocolo para trabalhar com celulas
+extension ViewController: UITableViewDataSource {
+    
     //Neste metodo e passado a quantidade de linhas que sera exibida dentro da TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -37,6 +42,5 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
-
 }
 
