@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46EFCA12970D24800A78F6F /* HomeTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B46EFCA02970D24800A78F6F /* HomeTableViewHeader.xib */; };
 		B492C0EA296F7622004AA425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492C0E9296F7622004AA425 /* AppDelegate.swift */; };
 		B492C0EC296F7622004AA425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492C0EB296F7622004AA425 /* SceneDelegate.swift */; };
 		B492C0EE296F7622004AA425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B492C0ED296F7622004AA425 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B46EFCA02970D24800A78F6F /* HomeTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewHeader.xib; sourceTree = "<group>"; };
 		B492C0E6296F7622004AA425 /* viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B492C0E9296F7622004AA425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B492C0EB296F7622004AA425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B492C0F2296F7623004AA425 /* Assets.xcassets */,
 				B492C0F4296F7623004AA425 /* LaunchScreen.storyboard */,
 				B492C0F7296F7623004AA425 /* Info.plist */,
+				B46EFCA02970D24800A78F6F /* HomeTableViewHeader.xib */,
 			);
 			path = viagens;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B492C0F6296F7623004AA425 /* LaunchScreen.storyboard in Resources */,
+				B46EFCA12970D24800A78F6F /* HomeTableViewHeader.xib in Resources */,
 				B492C0F3296F7623004AA425 /* Assets.xcassets in Resources */,
 				B492C0F1296F7622004AA425 /* Main.storyboard in Resources */,
 			);
