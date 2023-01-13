@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         /*Definindo o protocolo que sera implementado, neste caso,
          como o ViewController implementa UITableViewDataSource então ela mesmo sera definida como dataSource.*/
         viagensTableView.dataSource = self
+        viagensTableView.delegate = self
     }
 
 }
@@ -47,11 +48,18 @@ extension ViewController: UITableViewDataSource {
                           //Protocolo para acesso aos metodos do Header da TableView
 extension ViewController: UITableViewDelegate {
     
+    //Metodo para buscar a ViewHeader
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         //Buscar o arquivo do Header pelo nome
-        let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: nil)?.first as? HomeTableViewHeader
+        let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
         
         return headerView
+    }
+    
+    
+    //Metodo para definir a altura do Header
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 300
     }
 }
