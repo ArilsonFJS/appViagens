@@ -20,6 +20,9 @@ class ViewController: UIViewController {
          como o ViewController implementa UITableViewDataSource então ela mesmo sera definida como dataSource.*/
         viagensTableView.dataSource = self
         viagensTableView.delegate = self
+        
+        //definindo a cor de fundo do app com a mesma cor do header
+        view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
     }
 
 }
@@ -48,7 +51,7 @@ extension ViewController: UITableViewDataSource {
                           //Protocolo para acesso aos metodos do Header da TableView
 extension ViewController: UITableViewDelegate {
     
-    //Metodo para buscar a ViewHeader
+    //Metodo para buscar qual View sera exibido no header da TableView
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         //Buscar o arquivo do Header pelo nome
