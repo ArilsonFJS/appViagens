@@ -43,4 +43,15 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
-
+                            
+                          //Protocolo para acesso aos metodos do Header da TableView
+extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        //Buscar o arquivo do Header pelo nome
+        let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: nil)?.first as? HomeTableViewHeader
+        
+        return headerView
+    }
+}
