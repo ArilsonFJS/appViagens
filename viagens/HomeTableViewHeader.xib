@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="65a-HI-e3P" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65a-HI-e3P" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP Viajens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cug-Vc-9Kz">
                             <rect key="frame" x="27" y="55" width="127" height="33"/>
@@ -44,11 +43,19 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="6dK-bS-NpL"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="65a-HI-e3P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0rK-cN-SRB"/>
+                <constraint firstItem="65a-HI-e3P" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Edt-c7-rZg"/>
+                <constraint firstItem="65a-HI-e3P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gEj-57-ccZ"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bannerImageView" destination="Ovj-Z0-iOQ" id="K08-xT-IKp"/>
