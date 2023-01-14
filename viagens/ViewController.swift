@@ -56,12 +56,13 @@ extension ViewController: UITableViewDelegate {
         
         //Buscar o arquivo do Header pelo nome
         let headerView = Bundle.main.loadNibNamed("HomeTableViewHeader", owner: self, options: nil)?.first as? HomeTableViewHeader
+        headerView?.configuraView()
         
         return headerView
     }
     
     
-    //Metodo para definir a altura do Header
+    //Metodo para definir a altura do TableView
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 300
     }
