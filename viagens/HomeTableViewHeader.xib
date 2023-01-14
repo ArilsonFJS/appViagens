@@ -17,34 +17,37 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="65a-HI-e3P" userLabel="Header View">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP Viajens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cug-Vc-9Kz">
-                            <rect key="frame" x="27" y="55" width="127" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <view contentMode="scaleToFill" id="FIt-0B-eAS" userLabel="Banner View">
-                            <rect key="frame" x="20" y="135" width="374" height="130"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIt-0B-eAS" userLabel="Banner View">
+                            <rect key="frame" x="27" y="155" width="355" height="122"/>
                             <subviews>
                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1uz-Wu-P0P">
-                                    <rect key="frame" x="0.0" y="0.0" width="213" height="130"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="213" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ovj-Z0-iOQ">
-                                    <rect key="frame" x="210" y="0.0" width="164" height="130"/>
+                                    <rect key="frame" x="210" y="0.0" width="145" height="122"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                             </subviews>
                             <viewLayoutGuide key="safeArea" id="e1J-AA-fqb"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="122" id="fp9-GP-SUs"/>
+                            </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APP Viajens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cug-Vc-9Kz">
+                            <rect key="frame" x="27" y="79" width="127" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="23"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.11764705882352941" green="0.23137254901960785" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="6dK-bS-NpL"/>
+                        <constraint firstAttribute="bottom" secondItem="FIt-0B-eAS" secondAttribute="bottom" constant="-21" id="KqD-en-46a"/>
                     </constraints>
                 </view>
             </subviews>
@@ -54,7 +57,9 @@
             <constraints>
                 <constraint firstItem="65a-HI-e3P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0rK-cN-SRB"/>
                 <constraint firstItem="65a-HI-e3P" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Edt-c7-rZg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FIt-0B-eAS" secondAttribute="trailing" constant="35" id="VvQ-nQ-Bwt"/>
                 <constraint firstItem="65a-HI-e3P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gEj-57-ccZ"/>
+                <constraint firstItem="FIt-0B-eAS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="krg-8n-dPP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
