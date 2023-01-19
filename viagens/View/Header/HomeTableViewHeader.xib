@@ -24,19 +24,19 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIt-0B-eAS" userLabel="Banner View">
-                            <rect key="frame" x="308" y="149" width="364" height="122"/>
+                            <rect key="frame" x="308" y="149" width="379" height="122"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uz-Wu-P0P">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="122"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="208.33333333333334" height="122"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKx-Wf-59O">
-                                            <rect key="frame" x="16" y="13.999999999999996" width="168" height="61.666666666666657"/>
+                                            <rect key="frame" x="16" y="13.999999999999996" width="176.33333333333334" height="61.666666666666657"/>
                                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas exclusivas, somente no nosso app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyt-6k-ul3">
-                                            <rect key="frame" x="16" y="74.333333333333343" width="168" height="33.666666666666657"/>
+                                            <rect key="frame" x="16" y="74.333333333333343" width="176.33333333333334" height="33.666666666666657"/>
                                             <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="Ovj-Z0-iOQ">
-                                    <rect key="frame" x="200" y="0.0" width="164" height="122"/>
+                                    <rect key="frame" x="208.33333333333337" y="0.0" width="170.66666666666663" height="122"/>
                                 </imageView>
                             </subviews>
                             <viewLayoutGuide key="safeArea" id="e1J-AA-fqb"/>
@@ -87,7 +87,7 @@
             <constraints>
                 <constraint firstItem="65a-HI-e3P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0rK-cN-SRB"/>
                 <constraint firstItem="65a-HI-e3P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IZq-m4-IM8"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FIt-0B-eAS" secondAttribute="trailing" constant="35" id="VvQ-nQ-Bwt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FIt-0B-eAS" secondAttribute="trailing" constant="20" id="VvQ-nQ-Bwt"/>
                 <constraint firstItem="FIt-0B-eAS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="krg-8n-dPP"/>
                 <constraint firstItem="cug-Vc-9Kz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="x0r-3z-ObJ"/>
             </constraints>
