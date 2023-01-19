@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         viagensTableView.delegate = self
         
         //definindo a cor de fundo do app com a mesma cor do header
-        view.backgroundColor = UIColor(red: 30.0/255.0, green: 59.0/255.0, blue: 119.0/255.0, alpha: 1)
+        view.backgroundColor = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 119.0/255.0, alpha: 1)
     }
 
 }
